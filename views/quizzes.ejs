@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+     <u>
+     <%for (var i = 0; i < quizzes.length; i++) {%>
+        <li>¿<%quizzes[i].question;%>? <%quizzes[i].answer;%></li>
+      <%}%>
+      </u>
+    <a href="/">Volver a Home</a>
+  </body>
+</html>
